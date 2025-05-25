@@ -2,6 +2,6 @@
 
 import pandas as pd
 
-data = pd.read_csv("heart.csv")
-
-print(data)
+def load_heart_data(path="heart.csv"):
+    data = pd.read_csv(path)
+    return data
